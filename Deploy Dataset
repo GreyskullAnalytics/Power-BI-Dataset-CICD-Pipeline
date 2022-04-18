@@ -1,0 +1,1 @@
+TabularEditor.exe "_$(Build.DefinitionName)\drop\Model.bim" -D "Data Source=$(PBIWorkspace);User ID=app:%servicePrincipalId%@%tenantId%;Password=%servicePrincipalKey%;" "$(PBIDataset)" -O -C -P -R -M -E -V
