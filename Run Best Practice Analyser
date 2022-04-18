@@ -1,0 +1,1 @@
+TabularEditor.exe "$(Build.SourcesDirectory)\Database.json" -A "$(Build.SourcesDirectory)\BPARules.json" -V
