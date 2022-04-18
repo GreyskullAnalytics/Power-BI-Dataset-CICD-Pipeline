@@ -1,0 +1,2 @@
+echo (Model.DataSources["DWH"] as StructuredDataSource).Server = Environment.GetEnvironmentVariable("SourceServer");(Model.DataSources["DWH"] as StructuredDataSource).Database =Environment.GetEnvironmentVariable("SourceDatabase"); > SetSourceDatabase.cs
+TabularEditor.exe "_$(Build.DefinitionName)\drop\Model.bim" -S SetSourceDatabase.cs -D "Data Source=$(PBIWorkspace);User ID=app:$(PBIClientID)@$(PBITenantID);Password=$(PBISecret);" "$(PBIModel)" -O -C -P -R -M -E -V
